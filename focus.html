@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Js events</h1>
+<p>come here-let's see how to get focus<br/>go away-lets see how to lose focus
+</p> 
+<p id="p1"></p>
+<script>
+setInterval("ram()",1);
+function ram(){
+var str;
+if(document.hasFocus()){
+str="u r in";
+}
+else{
+str="u r out";
+}
+document.getElementById("p1").innerHTML=str;
+}
+</script>
+</body></html>
