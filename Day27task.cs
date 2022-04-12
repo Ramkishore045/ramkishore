@@ -8,7 +8,7 @@ namespace Task
 {
     class Day27task
     {
-        // SqlConnection con = new SqlConnection("data source = DESKTOP-NE6M66C;database = Newdatabase;user id = sa ;password = P@ssw0rd");
+        // SqlConnection con = new SqlConnection("data source = DESKTOP-FQMB7F5;database = softura;user id=sa;password=P@ssw0rd");
         public void createtable()
         {
             SqlConnection con = new SqlConnection("data source = DESKTOP-FQMB7F5;database = softura;user id=sa;password=P@ssw0rd");
