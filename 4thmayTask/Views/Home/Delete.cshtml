@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Customer.Models.Customers
+@{ 
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Delete</title>
+</head>
+<body>
+    @using (Html.BeginForm("Del", "Home", FormMethod.Post))
+    {
+        <table>
+            <tr><th>Delete Customer</th></tr>
+            <tr>
+                <td>CustomerID</td>
+                <td>@Html.TextBoxFor(m => m.CustomerID)</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="Delete" />
+                </td>
+            </tr>
+        </table>
+    }
+
+
+</body>
+</html>

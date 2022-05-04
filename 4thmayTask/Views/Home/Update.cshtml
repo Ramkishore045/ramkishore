@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Customer.Models.Customers
+@{ Layout = null;
+    }
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>UPDATE</title>
+    </head>
+
+    <body>
+        @using (Html.BeginForm("Upd", "Home", FormMethod.Post))
+        {
+<table>
+    <tr>
+        <th>Update-CustomerDetails</th>
+
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.CustomerID)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.CustomerID)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.CustomerName)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.CustomerName)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.EmailID)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.EmailID)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.MobileNo)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.MobileNo)
+        </td>
+    </tr>
+</table>
+                <input type="submit" name="Update" />}
+    </body>
+</html>
